@@ -1,1 +1,122 @@
 /* your code here */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #10df83;
+    font-family: Arial, sans-serif;
+}
+.product {
+    width: 550px;
+	 margin: 100px auto;
+	display: flex;
+    background-color: white;
+	border-radius: 5px;
+}
+.product__photo {
+    width: 50%;
+	margin-left: -35px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.photo-container {
+    background-color: #b5ed00;
+}
+.photo-main {
+    padding: 30px 10px;
+}
+.photo-main img {
+    width: 100%;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.photo-album {
+    background-color: white;
+    padding: 20px;
+}
+.photo-album ul {
+    display: flex;
+    gap: 5px;
+	padding: 0;
+	margin: 0;
+    list-style: none;
+}
+.photo-album li {
+    border: 1px solid #ccc;
+	padding: 3px;
+}
+.photo-album img {
+    width: 45px;
+	height: 45px;
+	object-fit: contain; 
+}
+.product__info {
+    width: 50%;
+	padding: 35px 15px;
+}
+.title h1 {
+    font-size: 22px;
+	margin-bottom: 5px;
+}
+.title span {
+    font-size: 10px;
+    color: #999;
+}
+.price {
+    margin: 40px 0;
+    color: #ff4545;
+}
+.price span {
+    font-size: 45px;
+}
+.variant h3,
+.description h3 {
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 1px;
+}
+.variant ul {
+    display: flex;
+    gap: 8px;
+	padding: 0;
+    list-style: none;
+}
+.variant img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.description ul {
+    padding-left: 30px;
+	font-size: 11px;
+    line-height: 1.8;
+}
+.add-to-cart {
+    margin-top: 20px;
+	padding: 15px 35px;
+	border: none;
+    border-radius: 5px;
+    background-color: #ff4545;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .product {
+        width: 90%;
+		flex-direction: column;
+    }
+	.product__photo,
+    .product__info {
+        width: 100%;
+    }
+
+	.product__photo {
+        margin: 0;
+    }
+}
